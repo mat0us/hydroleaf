@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { Nunito } from '@next/font/google';
 
 const config: Config = {
   content: [
@@ -12,6 +13,12 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        nunito: ['Nunito',],
+      },
+      boxShadow: {
+        neon: "0 0 80px theme('colors.green.300'), 0 0 20px theme('colors.green.400')"
+      }
     },
   },
   plugins: [],
