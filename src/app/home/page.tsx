@@ -1,7 +1,7 @@
 "use client"; 
 
 import React, { useEffect, useState } from "react";
-import { auth } from "../../../firebaseConfig";
+import { auth } from "../../../config/firebaseConfig";
 import { logoutUser, getUserName } from "../lib/auth";
 import { useRouter } from "next/navigation";
 
@@ -28,14 +28,14 @@ const Home: React.FC = () => {
   const handleLogout = async () => {
     try {
       await logoutUser(auth);
-      router.push("/auth/signin"); 
+      router.push("/"); 
     } catch (error) {
       console.error("Error logging out:", error);
     }
   };
 
   if (loading) {
-    return <p>Loading...</p>; // Ukazatel načítání, pokud se data načítají
+    return <p>Loading...</p>;
   }
 
   return (

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { resetPassword } from "../../lib/auth";
-import { auth } from "../../../../firebaseConfig";
+import { auth } from "../../../../config/firebaseConfig";
 
 const ResetPassword = () => {
   const [email, setEmail] = useState<string>("");

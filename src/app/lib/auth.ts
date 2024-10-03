@@ -2,7 +2,7 @@
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, sendPasswordResetEmail, signOut, Auth, updateProfile } from "firebase/auth";
 
 import { ref, get, set, child } from "firebase/database";
-import { auth, db } from "../../../firebaseConfig";
+import { auth, db } from "../../../config/firebaseConfig";
 
 // Pomocná funkce pro formátování data
 const formatDate = (date: Date) => {

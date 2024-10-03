@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { registerUser } from "../../lib/auth";
-import { auth } from "../../../../firebaseConfig";
+import { auth } from "../../../../config/firebaseConfig";
 import { useRouter } from "next/navigation";
 import Modal from "../../components/ModalProps";
 
@@ -43,7 +43,7 @@ const SignUp: React.FC = () => {
         <div>
           <label
             htmlFor="name"
-            className="block text-sm font-semibold font-medium leading-6 text-gray-900"
+            className="block text-sm font-semibold font-medium leading-6 text-label"
           >
             Name
           </label>
@@ -61,7 +61,7 @@ const SignUp: React.FC = () => {
         <div>
           <label
             htmlFor="email"
-            className="block text-sm font-semibold font-medium leading-6 text-gray-900"
+            className="block text-sm font-semibold font-medium leading-6 text-label"
           >
             E-mail
           </label>
@@ -79,7 +79,7 @@ const SignUp: React.FC = () => {
         <div>
           <label
             htmlFor="password"
-            className="block text-sm font-semibold font-medium leading-6 text-gray-900"
+            className="block text-sm font-semibold font-medium leading-6 text-label"
           >
             Password
           </label>
@@ -97,7 +97,7 @@ const SignUp: React.FC = () => {
         <div>
           <label
             htmlFor="passwordAgain"
-            className="block text-sm font-semibold font-medium leading-6 text-gray-900"
+            className="block text-sm font-semibold font-medium leading-6 text-label"
           >
             Repeat password
           </label>

@@ -8,9 +8,9 @@ const Picker: React.FC = () => {
   const [selectedForm, setSelectedForm] = useState<string>("signup");
 
   return (
-    <div className="flex flex-col md:flex-row shadow-neon rounded-lg">
+    <div className="flex flex-col md:flex-row shadow-neon rounded-lg md:rounded-lg">
       {/* Form Section */}
-      <div className="flex flex-col justify-center items-center bg-white w-full md:w-1/2 md:p-4 rounded-lg md:rounded-l-lg">
+      <div className="flex flex-col justify-center items-center w-full md:w-1/2 md:p-4 rounded-lg md:rounded-lg">
         <div className="flex flex-row m-1">
           <button
             onClick={() => setSelectedForm("signup")}

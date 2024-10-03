@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { loginUser } from "../../lib/auth";
-import { auth } from "../../../../firebaseConfig";
+import { auth } from "../../../../config/firebaseConfig";
 import { useRouter } from "next/navigation";
 import Modal from "../../components/ModalProps";
 
@@ -34,7 +34,7 @@ const SignIn: React.FC = () => {
         <div>
           <label
             htmlFor="email"
-            className="block text-sm font-semibold font-medium leading-6 text-gray-900"
+            className="label block text-sm font-semibold font-medium leading-6 text-label"
           >
             E-mail
           </label>
@@ -51,7 +51,7 @@ const SignIn: React.FC = () => {
         <div>
           <label
             htmlFor="password"
-            className="block text-sm font-semibold font-medium leading-6 text-gray-900"
+            className="block text-sm font-semibold font-medium leading-6 text-label"
           >
             Password
           </label>

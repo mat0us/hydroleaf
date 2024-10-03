@@ -1,5 +1,5 @@
 import { logoutUser } from "../lib/auth";
-import { auth } from "../../../firebaseConfig";
+import { auth } from "../../../config/firebaseConfig";
 
 const LogoutButton = () => {
   const handleLogout = async () => {
